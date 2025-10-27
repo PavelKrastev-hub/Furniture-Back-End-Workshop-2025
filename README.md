@@ -22,9 +22,9 @@
 - [x] Add register endpoint
 - [x] Add database `npm i mogoose`
 - [x] Add user model
-- [ ] Add user service with register method
-- [ ] Install bcrypt
-- [ ] Hash password on registration
+- [x] Add user service with register method
+- [x] Install bcrypt
+- [x] Hash password on registration
 
 ## Bonus
 - [ ] Build
