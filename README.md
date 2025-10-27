@@ -30,7 +30,12 @@
 - [x] Generate and return token
 - [x] Auto login after register
 - [x] Create logoug
-- [ ] Add auth middleware
+- [x] Add auth middleware
+
+## Furniture Endpoints
+- [x] Add furniture model
+- [ ] Add furniture service
+- [ ] Create furniture endpoint
 
 ## Bonus
 - [x] Use env variables `npm i dotenv`
