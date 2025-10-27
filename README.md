@@ -29,8 +29,11 @@
 - [x] Veify login credentials
 - [x] Generate and return token
 - [x] Auto login after register
-- [ ] Create logoug
+- [x] Create logoug
 - [ ] Add auth middleware
 
 ## Bonus
+- [x] Use env variables `npm i dotenv`
 - [ ] Build
+- [ ] Refactor service
+- [ ] Invalidate token
