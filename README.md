@@ -18,10 +18,10 @@
 
 ## Authentication and Authorization
 - [x] Add user controller
-- [ ] Add json parser
-- [ ] Add register endpoint
-- [ ] Add database `npm i mogoose`
-- [ ] Add user model
+- [x] Add json parser
+- [x] Add register endpoint
+- [x] Add database `npm i mogoose`
+- [x] Add user model
 - [ ] Add user service with register method
 - [ ] Install bcrypt
 - [ ] Hash password on registration
