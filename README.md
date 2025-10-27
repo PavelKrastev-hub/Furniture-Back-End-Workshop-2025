@@ -25,6 +25,9 @@
 - [x] Add user service with register method
 - [x] Install bcrypt
 - [x] Hash password on registration
+- [x] Add login endpoint
+- [x] Veify login credentials
+- [ ] Return token
 
 ## Bonus
 - [ ] Build
