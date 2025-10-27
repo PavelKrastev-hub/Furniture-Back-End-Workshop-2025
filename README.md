@@ -8,7 +8,11 @@
 
 ## Startup Client
 - [x] Install vite (local development server) `npm i -D vite`
-- [ ] Setup vite
+- [x] Setup vite
+
+## Setup Rest Api
+- [x] Initialize project and add .gitignore
+- [ ] Install and setup express `npm i express`
 
 
 ## Bonus
