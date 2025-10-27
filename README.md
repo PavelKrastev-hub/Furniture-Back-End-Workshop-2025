@@ -13,8 +13,8 @@
 ## Setup Rest Api
 - [x] Initialize project and add .gitignore
 - [x] Install and setup express `npm i express`
-- [ ] Add CORS
-
+- [x] Add CORS
+- [x] Add furniture controller
 
 ## Bonus
 - [ ] Build
