@@ -17,7 +17,14 @@
 - [x] Add furniture controller
 
 ## Authentication and Authorization
-- [ ] Add user controller
+- [x] Add user controller
+- [ ] Add json parser
+- [ ] Add register endpoint
+- [ ] Add database `npm i mogoose`
+- [ ] Add user model
+- [ ] Add user service with register method
+- [ ] Install bcrypt
+- [ ] Hash password on registration
 
 ## Bonus
 - [ ] Build
