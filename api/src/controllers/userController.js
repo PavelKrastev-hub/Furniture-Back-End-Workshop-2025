@@ -6,8 +6,9 @@ const userController = Router();
 userController.post('/register', async (req, res) => {
    const { email, password } = req.body;
 
-   await userService.register(email, password);
-   res.status(201).end();
+   const result = await userService.register(email, password);
+
+   res.status(201).json(result)
 });
 
 userController.post('/login', async (req, res) => {

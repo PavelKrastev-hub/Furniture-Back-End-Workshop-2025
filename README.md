@@ -27,7 +27,10 @@
 - [x] Hash password on registration
 - [x] Add login endpoint
 - [x] Veify login credentials
-- [ ] Generate and return token
+- [x] Generate and return token
+- [x] Auto login after register
+- [ ] Create logoug
+- [ ] Add auth middleware
 
 ## Bonus
 - [ ] Build
