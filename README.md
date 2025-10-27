@@ -27,7 +27,7 @@
 - [x] Hash password on registration
 - [x] Add login endpoint
 - [x] Veify login credentials
-- [ ] Return token
+- [ ] Generate and return token
 
 ## Bonus
 - [ ] Build
