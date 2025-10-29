@@ -5,11 +5,6 @@ import { generateAuthToken } from "../utils/tokenUtils.js";
 export async function register(email, password) {
    const user = await User.create({ email, password });
 
-   const payload = {
-      id: user.id,
-      email: user.email,
-   };
-
    const token = generateAuthToken(user);
 
    return {
