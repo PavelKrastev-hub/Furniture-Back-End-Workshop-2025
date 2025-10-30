@@ -37,6 +37,7 @@
 - [x] Add furniture service
 - [x] Create furniture endpoint
 - [x] Get all furnitures
+- [x] Select only needed information for catalog
 
 ## Bonus
 - [x] Use env variables `npm i dotenv`

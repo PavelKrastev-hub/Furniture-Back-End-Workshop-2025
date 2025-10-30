@@ -5,5 +5,9 @@ export function create(furnitureData) {
 };
 
 export function getAll() {
-   return Furniture.find();
+   return Furniture.find().select({
+      description: true,
+      price: true,
+      img: true,
+   });
 };
