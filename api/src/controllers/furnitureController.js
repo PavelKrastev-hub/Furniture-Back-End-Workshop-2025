@@ -11,9 +11,10 @@ furnitureController.get('/', async (req, res) => {
 
 furnitureController.post('/', async (req, res) => {
    const furnitureData = req.body;
-   console.log(req.body);
+   const ownerId = req.user.id;
+
    // try {
-   const furniture = await furnitureService.create(furnitureData);
+   const furniture = await furnitureService.create(furnitureData, ownerId);
    res.status(201).json(furniture);
    // } catch (error) {
 
@@ -27,4 +28,19 @@ furnitureController.get('/:furnitureId', async (req, res) => {
 
    res.json(furniture);
 });
+
+furnitureController.put('/:furnitureId', async (req, res) => {
+   const furnitureId = req.params.furnitureId;
+   const furnitureData = req.body;
+   try {
+      const furniture = await furnitureService.update(furnitureId, furnitureData)
+
+      res.json(furniture);
+   } catch (error) {
+      
+   }
+});
+
+
+
 export default furnitureController;
