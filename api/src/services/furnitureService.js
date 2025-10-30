@@ -11,3 +11,7 @@ export function getAll() {
       img: true,
    });
 };
+
+export function getOne(furnitureId) {
+   return Furniture.findById(furnitureId);
+}
