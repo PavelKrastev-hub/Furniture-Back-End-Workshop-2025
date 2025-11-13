@@ -39,7 +39,9 @@
 - [x] Get all furnitures
 - [x] Select only needed information for catalog
 - [x] Create details endpoint
-- [ ] Add owner relation to furniture
+- [x] Add owner relation to furniture
+- [x] Edit furniture endpoint
+- [x] Delete furniture endpoint
 
 ## Bonus
 - [x] Use env variables `npm i dotenv`

@@ -22,3 +22,7 @@ export function getOne(furnitureId) {
 export function update(furnitureId, furnitureData) {
    return Furniture.findByIdAndUpdate(furnitureId, furnitureData, { runValidators: true });
 };
+
+export function remove(furnitureId) {
+   return Furniture.findByIdAndDelete(furnitureId);
+}
