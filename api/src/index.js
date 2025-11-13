@@ -4,6 +4,7 @@ import mongoose from "mongoose";
 import 'dotenv/config';
 import routes from "./routes.js";
 import { authMiddleware } from "./middlewares/authMiddleware.js";
+import { errorHandler } from "./middlewares/errorHandler.js";
 
 const app = express();
 try {
@@ -24,5 +25,7 @@ app.use(express.json());
 app.use(authMiddleware);
 
 app.use(routes);
+
+app.use(errorHandler);
 
 app.listen(3030, () => 'Server is listening on http://localhost:3030...');
