@@ -1,14 +1,18 @@
 import Router from "express";
 import { userService } from "../services/index.js";
+import { getErrorMessage } from "../utils/errorUtils.js";
 
 const userController = Router();
 
 userController.post('/register', async (req, res) => {
    const { email, password } = req.body;
+   try {
+      const result = await userService.register(email, password);
 
-   const result = await userService.register(email, password);
-
-   res.status(201).json(result)
+      res.status(201).json(result)
+   } catch (error) {
+      res.status(400).json({ message: getErrorMessage(error) });
+   }
 });
 
 userController.post('/login', async (req, res) => {
