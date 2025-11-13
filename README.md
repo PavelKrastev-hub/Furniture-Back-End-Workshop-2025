@@ -42,6 +42,7 @@
 - [x] Add owner relation to furniture
 - [x] Edit furniture endpoint
 - [x] Delete furniture endpoint
+- [x] Filter furniture by user id
 
 ## Bonus
 - [x] Use env variables `npm i dotenv`

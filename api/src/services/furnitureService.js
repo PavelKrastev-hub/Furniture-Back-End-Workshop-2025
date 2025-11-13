@@ -7,8 +7,8 @@ export function create(furnitureData, ownerId) {
    });
 };
 
-export function getAll() {
-   return Furniture.find().select({
+export function getAll(filter) {
+   return Furniture.find(filter).select({
       description: true,
       price: true,
       img: true,
@@ -23,6 +23,7 @@ export function update(furnitureId, furnitureData) {
    return Furniture.findByIdAndUpdate(furnitureId, furnitureData, { runValidators: true });
 };
 
-export function remove(furnitureId) {
+export function remove(furnitureId, userId) {
    return Furniture.findByIdAndDelete(furnitureId);
+   // return Furniture.deleteOne({ id: furnitureId, _ownerId: userId });
 }

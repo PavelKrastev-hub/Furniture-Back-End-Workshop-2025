@@ -1,11 +1,19 @@
 import { Router } from "express";
 import { furnitureService } from "../services/index.js";
-import Furniture from "../models/Furniture.js";
+import querystring from "querystring";
 
 const furnitureController = Router();
 
 furnitureController.get('/', async (req, res) => {
-   const furnitures = await furnitureService.getAll();
+   const query = req.query.where?.replaceAll('"', '');
+   let filter = {};
+
+   if (query) {
+      filter = querystring.parse(query);
+   }
+
+   const furnitures = await furnitureService.getAll(filter);
+
    res.json(furnitures || []);
 });
 
@@ -43,9 +51,10 @@ furnitureController.put('/:furnitureId', async (req, res) => {
 
 furnitureController.delete('/:furnitureId', async (req, res) => {
    const furnitureId = req.params.furnitureId;
+   const userId = req.user.id;
 
    try {
-      const furniture = await furnitureService.remove(furnitureId);
+      const furniture = await furnitureService.remove(furnitureId, userId);
 
       res.json(furniture);
    } catch (error) {
